@@ -11,7 +11,7 @@ const Header = (props: any) => {
                 </S.Logomark>
 
                 <S.UserInteractions>
-                    <div className="">
+                    <div className="searchBox">
                         <input type="search" aria-label="realizar uma busca pelo conteúdo do site" placeholder="digite o que deseja buscar..."/>
                         <i className='bx bx-search'></i>
                     </div>
