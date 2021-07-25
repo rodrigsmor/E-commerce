@@ -3,18 +3,26 @@
         {
             "id": 1,
             "photo": "./img/products/iphone11-red.png",
-            "name": "Iphone 11",
+            "name": "iPhone 11 Apple",
             "alternative": "Smartphone Iphone 11 vermelho",
             "description": "iPhone 11 Apple 128GB vermelho Tela de 6,1, CÂmera Dupla de 12MP, IOs",
-            "price": 5000
+            "price": 4369.97
         },
         {
             "id": 2,
-            "photo": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-red-select-2020?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604343703000",
-            "name": "Iphone",
-            "alternative": "Iphone",
-            "description": "sim",
-            "price": 5000
+            "photo": "./img/products/moto-g9-power.png",
+            "name": "Moto G9 Power",
+            "alternative": "Smartphone da marca motorola com câmera traseira tripla da cor verde pacífico.",
+            "description": "Smartphone Motorola Moto G9 Power 128gb, 4GB, Tela de 6.8” , Câmera Traseira Tripla, Android 10 e Processador Octa-Core",
+            "price": 1349.10
+        },
+        {
+            "id": 3,
+            "photo": "./img/products/Samsung-S10.jpg",
+            "name": "Samsung Galaxy S10",
+            "alternative": "Smartphone Samsung azul",
+            "description": "Smartphone Samsung Galaxy S10 128GB 4G tela 6.1” Câmera Tripla 16MP Selfie 10MP Dual Chip OctaCore Android 9.0",
+            "price": 3149.10
         }
     ]
 }

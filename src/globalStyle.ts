@@ -9,6 +9,14 @@ export default createGlobalStyle`
 
     html {
         color: #594f4f;
+        width: 100vw;
+        max-width: 100vw;
+        height: fit-content;
         font-family: Poppins, sans-serif;
+    }
+
+    html, body {
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 `;

@@ -14,7 +14,7 @@ export const Container = styled.section`
         display: grid;
         cursor: pointer;
         place-items: center;
-        box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.3);
+        box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, .5);
         background: url('../img/pictures/moveis.jpg');
         background-size: cover;
 
