@@ -9,6 +9,10 @@ export const Container = styled.section`
     flex-direction: column;
 
     .sectionTitle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         align-self: center;
         margin: 0 0 30px;
 
@@ -48,7 +52,7 @@ export const Container = styled.section`
 
                 img {
                     width: auto;
-                    height: 80%;
+                    height: 70%;
                 }
             }
 
@@ -80,6 +84,38 @@ export const Container = styled.section`
                     }
                 }
             }
+        }
+    }
+`;
+
+export const CategoriesBar = styled.div`
+    display: flex;
+    width: 50vw;
+    margin: 10px 0 0;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        border: none;
+        outline: none;
+        color: #594f4f;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 5px 20px;
+        font-family: 18px;
+        border-radius: 15px;
+        transition: .3s linear;
+        background: transparent;
+        font-family: Poppins, sans-serif;
+
+        &:nth-of-type(3) {
+            font-size: 20px;
+        }
+
+        &:hover,
+        &.selected {
+            border-bottom: 3px solid #594f4f;
+            background: rgba(245, 218, 221, 0.35);
         }
     }
 `;
