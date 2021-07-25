@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import { Container } from './styled';
 import api from '../../services/api';
+import Init from '../../components/Init/index';
+import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/index';
+import Cathegories from '../../components/Cathegories/index';
 
 interface IProduct {
   id: number,
@@ -35,10 +37,10 @@ const Home: React.FC = () => {
   return (
     <>
       <Header quantidade={cart.length}/>
-      {cart.length}
-
+      <Init />
+      <Cathegories />
       <Container>
-        <div>
+        {/* <div>
           { 
             data.map((prod, index) => (
               <div key={prod.id}>
@@ -50,7 +52,7 @@ const Home: React.FC = () => {
               </div>
             )) 
           }
-        </div>
+        </div> */}
       </Container>
     </>
   );
