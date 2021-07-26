@@ -4,6 +4,7 @@ import Init from '../../components/Init/index';
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/index';
 import Cathegories from '../../components/Cathegories/index';
+import Annoucement from '../../components/annoucement/index';
 
 interface IProduct {
   id: number,
@@ -67,6 +68,8 @@ const Home: React.FC = () => {
           }
         </div>
       </Container>
+
+      <Annoucement />
 
       <Container>
         <div className="sectionTitle">
