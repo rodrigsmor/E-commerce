@@ -127,7 +127,8 @@ const Home: React.FC = () => {
                         <button onClick={() => handleCart(index)} >Adicionar ao carrinho</button>
                       </div>
                     </div>
-              ))
+                  )
+                )
           }
         </div>
         

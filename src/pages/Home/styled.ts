@@ -28,6 +28,8 @@ export const Container = styled.section`
     .Technologies {
         width: 100%;
         display: flex;
+        grid-gap: 30px;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
 

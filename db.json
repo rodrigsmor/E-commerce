@@ -6,7 +6,7 @@
             "name": "iPhone 11 Apple",
             "alternative": "Smartphone Iphone 11 vermelho",
             "description": "iPhone 11 Apple 128GB vermelho Tela de 6,1, CÂmera Dupla de 12MP, IOs",
-            "category": "azul",
+            "category": "tecnologia",
             "price": 4369.97
         },
         {
@@ -24,8 +24,89 @@
             "name": "Samsung Galaxy S10",
             "alternative": "Smartphone Samsung azul",
             "description": "Smartphone Samsung Galaxy S10 128GB 4G tela 6.1” Câmera Tripla 16MP Selfie 10MP Dual Chip OctaCore Android 9.0",
-            "category": "ama",
+            "category": "tecnologia",
             "price": 3149.10
+        },
+        {
+            "id": 4,
+            "photo": "./img/products/Fogão-Brastemp.webp",
+            "name": "Fogão Brastemp BFS5VCR",
+            "alternative": "Fogão Brastemp de 5 bocas da cor Inox",
+            "description": "Fogão Brastemp 5 Bocas Cor Inox Com Mesa De Vidro E Turbo Chama - BFS5VCR • BIVOLT",
+            "category": "eletrodomesticos",
+            "price": 2909.03
+        },
+        {
+            "id": 5,
+            "photo": "./img/products/Refrigerador-DM84X.png",
+            "name": "Refrig. Electrolux DM84X",
+            "alternative": "Refrigerador Frost Free",
+            "description": "Geladeira Frost Free Electrolux 579 Litros 3 Portas Inverse Cor Inox (DM84X)",
+            "category": "eletrodomesticos",
+            "price": 5399.59
+        },
+        {
+            "id": 6,
+            "photo": "./img/products/sanduicheira-mondial-master.webp",
+            "name": "Sanduicheira Mondial",
+            "alternative": "Sanduicheira Grill Mondial Master Press PG-01 - Inox",
+            "description": "Sanduicheira Grill Mondial Master Press PG-01 - Inox",
+            "category": "eletrodomesticos",
+            "price": 116.91
+        },
+        {
+            "id": 7,
+            "photo": "./img/products/Forno-eletrico-philco.png",
+            "name": "Forno Philco PFe09v",
+            "alternative": "Forno Elétrico Philco 3 em 1 Cafeteira, Forno e Grill Pfe09v",
+            "description": "Forno Elétrico Philco 3 em 1 Cafeteira, Forno e Grill Pfe09v",
+            "category": "eletrodomesticos",
+            "price": 369.99
+        },
+        {
+            "id": 8,
+            "photo": "/img/products/Fritadeira-Mondial.png",
+            "name": "Air Fryer AF-301",
+            "alternative": "Fritadeira Sem Óleo Mondial Family AF-30i Air Fryer 3.5L Preta",
+            "description": "Fritadeira Sem Óleo Mondial Family AF-30i Air Fryer 3.5L Preta",
+            "category": "eletrodomesticos",
+            "price": 328.90
+        },
+        {
+            "id": 9,
+            "photo": "./img/products/Fogão-Consul.png",
+            "name": "Fogão Consul CFO4N",
+            "alternative": "Fogão Consul 4 bocas cor inox com acendimento automático",
+            "description": "Fogão Consul 4 bocas cor inox com acendimento automático",
+            "category": "eletrodomesticos",
+            "price": 1029.00
+        },
+        {
+            "id": 10,
+            "photo": "./img/products/fogão-cooktop.png",
+            "name": "Fogão Cooktop Itatiaia",
+            "alternative": "Cooktop à Gás com acendimento automático 5 Bocas Itatiaia Preto - Bivolt",
+            "description": "Cooktop à Gás com acendimento automático 5 Bocas Itatiaia Preto - Bivolt",
+            "category": "eletrodomesticos",
+            "price": 449.90
+        },
+        {
+            "id": 11,
+            "photo": "./img/products/Kit-cadence.png",
+            "name": "Kit Cadence Amarelo",
+            "alternative": "Kit Cadence Colors Amarelo - Torradeira e Cafeteira - 220V",
+            "description": "Kit Cadence Colors Amarelo - Torradeira e Cafeteira - 220V",
+            "category": "eletrodomesticos",
+            "price": 169.90
+        },
+        {
+            "id": 12,
+            "photo": "./img/products/Fogão-electrolux.png",
+            "name": "Fogão Electrolux 76GS",
+            "alternative": "Fogão 5 Bocas Electrolux Preto automático com mesa de vidro e tripla chama (76GS) - Bivolt",
+            "description": "Fogão 5 Bocas Electrolux Preto automático com mesa de vidro e tripla chama (76GS) - Bivolt",
+            "category": "eletrodomesticos",
+            "price": 1829.00
         }
     ]
 }
