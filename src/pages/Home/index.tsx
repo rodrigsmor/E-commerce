@@ -1,8 +1,9 @@
-import { Container, CategoriesBar } from './styled';
 import api from '../../services/api';
 import Init from '../../components/Init/index';
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/index';
+import Footer from '../../components/Footer/index';
+import { Container, CategoriesBar } from './styled';
 import Cathegories from '../../components/Cathegories/index';
 import Annoucement from '../../components/annoucement/index';
 
@@ -134,8 +135,8 @@ const Home: React.FC = () => {
                 )
           }
         </div>
-        
       </Container>
+      <Footer />
     </>
   );
 }
