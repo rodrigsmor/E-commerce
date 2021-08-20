@@ -2,29 +2,51 @@ import styled from 'styled-components';
 
 export const Footer = styled.footer`
     width: 100%;
-    height: fit-content;
-    background: #cc0025;
+    height: 80px;
+    max-width: 100vw;
+    background: purple;
 `;
 
-export const NewsLetter = styled.div`
+export const Container = styled.div`
     width: 100%;
-    height: 80px;
-    padding: 0 5%;
+    max-width: 100vw;
+    height: fit-content;
+`;
+
+export const Section1 = styled.section`
+    width: 100%;
+    height: 45px;
     display: flex;
     max-width: 100vw;
+    background: #fff;
     align-items: center;
-    background: #cc0025;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
+    li {
+        list-style: none;
+        display: inline-flex;
+        padding: 0 0 0 15px;
+        
+        &:first-of-type {
+            padding: 0;
+        }
+
+        a {
+            color: #594f4f;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
 `;
 
 export const InputWrapper = styled.form`
     margin: 0;
-    color: #fff;
+    display: flex;
+    color: #594f4f;
+    grid-gap: 15px;
     font-size: 15px;
-
-    label {
-        margin: 0 0 0 10px;
-    }
+    align-items: center;
 
     div {
         width: 350px;
@@ -65,16 +87,5 @@ export const InputWrapper = styled.form`
                 background: #cc0025;
             }
         }
-    }
-`;
-
-export const SocialMedias = styled.div`
-    display: flex;
-    grid-gap: 10%;
-    align-items: center;
-
-    i {
-        color: #fff;
-        font-size: 25px;
     }
 `;

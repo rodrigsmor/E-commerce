@@ -6,17 +6,25 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    
+    /* html, body {
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
 
     html {
-        color: #594f4f;
         width: 100vw;
         max-width: 100vw;
         height: fit-content;
         font-family: Poppins, sans-serif;
-    }
-
+    } */
+    
     html, body {
-        max-width: 100vw;
+        width: 100%;
+        color: #594f4f;
+        max-width: 100%;
         overflow-x: hidden;
+        font-family: Poppins, sans-serif;
     }
 `;

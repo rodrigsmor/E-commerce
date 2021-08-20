@@ -1,13 +1,11 @@
 import * as S from './styled';
+import Logomark from '../Logomark';
 
 const Header = (props: any) => {
     return (
         <S.Header>
             <div className="headerContainer">
-                <S.Logomark>
-                    <i className='bx bxs-shopping-bags'></i>
-                    <h1>Market<span>Lify</span></h1>
-                </S.Logomark>
+                <Logomark />
 
                 <S.UserInteractions>
                     <div className="searchBox">
