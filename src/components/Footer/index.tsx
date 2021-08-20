@@ -50,6 +50,19 @@ const Footer = () => {
                         </S.SocialMedias>
                     </div>
                 </S.Section2>
+
+                <S.Copyrights> 
+                    <h6>Desenvolvido por Rodrigo Moreira</h6>
+
+                    <div className="social-medias">
+                        <a href="#linkedin"> 
+                           <i className='bx bxl-linkedin-square' ></i>
+                        </a> 
+                        <a href="#github"> 
+                           <i className='bx bxl-github' ></i>
+                        </a> 
+                    </div>
+                </S.Copyrights>
             </S.Container>
         </S.Footer>
     );

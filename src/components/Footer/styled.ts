@@ -74,6 +74,32 @@ export const SocialMedias = styled.div`
     }
 `;
 
+export const Copyrights = styled.div`
+    width: 100%;
+    height: 30px;
+    display: flex;
+    grid-gap: 15px;
+    background: #fe4365;
+    align-items: center;
+    justify-content: center;
+
+    h6 {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .social-medias {
+        display: flex;
+        grid-gap: 5px !important;
+
+        a {
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+`;
+
 export const InputWrapper = styled.form`
     margin: 0;
     display: flex;
