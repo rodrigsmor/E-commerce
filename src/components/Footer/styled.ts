@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const Footer = styled.footer`
     width: 100%;
-    height: 80px;
     max-width: 100vw;
-    background: purple;
+    height: fit-content;
 `;
 
 export const Container = styled.div`
@@ -15,10 +14,21 @@ export const Container = styled.div`
 
 export const Section1 = styled.section`
     width: 100%;
-    height: 45px;
+    height: 80px;
     display: flex;
     max-width: 100vw;
     background: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: solid 1px rgba(0, 0, 0, 0.05);
+
+    `;
+
+export const Section2 = styled.section`
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background: #f67280;
     align-items: center;
     justify-content: space-evenly;
 
@@ -30,13 +40,37 @@ export const Section1 = styled.section`
         &:first-of-type {
             padding: 0;
         }
-
+    
         a {
-            color: #594f4f;
+            color: #fff;
             font-size: 15px;
-            font-weight: 500;
+            font-weight: 400;
             text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
+    }
+
+    div {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        grid-gap: 50px;
+        align-items: center;
+    }
+`;
+
+export const SocialMedias = styled.div`
+    display: flex;
+    height: 100%;
+    grid-gap: 15pt !important;
+    align-items: center;
+
+    i {
+        color: #fff;
+        font-size: 25px;
     }
 `;
 
