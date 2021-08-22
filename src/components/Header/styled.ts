@@ -25,7 +25,7 @@ export const Header = styled.header`
 
 export const UserInteractions = styled.div`
     display: flex;
-    grid-gap: 15px;
+    grid-gap: 30px;
     color: #fe4365;
     font-size: 20px;
     align-items: center;
@@ -36,6 +36,7 @@ export const UserInteractions = styled.div`
 
     .cartBox {
         display: flex;
+        grid-gap: 25px;
         width: fit-content;
         height: fit-content;
         align-items: center;

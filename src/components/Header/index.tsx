@@ -13,13 +13,14 @@ const Header = (props: any) => {
                     
                     <div className="cartBox">
                         <i className='bx bx-cart'></i>
+                        <i className='bx bx-heart'></i>
                         <span className={props.quantidade === 0 ? 'notDisplay' : ''}>
                             <p>
                                 {props.quantidade}
                             </p>
                         </span>
+                        <i className='bx bx-user'></i>
                     </div>
-                    <i className='bx bx-user'></i>
                 </S.UserInteractions>
             </div>
         </S.Header>

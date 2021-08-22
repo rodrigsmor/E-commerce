@@ -39,12 +39,17 @@ export const SearchButton = styled.button`
     border-radius: 50%;
     background: #fe4365;
     place-items: center;
-    border: 1px solid #962062;
+    transition: 1s linear;
+    border: none;
 
     i {
         color: #fff;
         line-height: 0;
         font-size: 20px;
         background: pink;
+    }
+
+    &:hover {
+        background: #cc0025;
     }
 `;
