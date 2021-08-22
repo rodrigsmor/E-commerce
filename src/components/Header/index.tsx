@@ -1,5 +1,6 @@
 import * as S from './styled';
 import Logomark from '../Logomark';
+import SearchBar from '../SearchBar';
 
 const Header = (props: any) => {
     return (
@@ -8,10 +9,8 @@ const Header = (props: any) => {
                 <Logomark />
 
                 <S.UserInteractions>
-                    <div className="searchBox">
-                        <input type="search" aria-label="realizar uma busca pelo conteúdo do site" placeholder="digite o que deseja buscar..."/>
-                        <i className='bx bx-search'></i>
-                    </div>
+                    <SearchBar />
+                    
                     <div className="cartBox">
                         <i className='bx bx-cart'></i>
                         <span className={props.quantidade === 0 ? 'notDisplay' : ''}>

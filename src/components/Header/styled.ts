@@ -67,27 +67,4 @@ export const UserInteractions = styled.div`
             }
         }
     }
-
-    .searchBox {
-        display: flex;
-        grid-gap: 8px;
-        width: fit-content;
-        height: fit-content;
-        align-items: center;
-        
-        input {
-            width: 300px;
-            border: none;
-            outline: none;
-            color: #594f4f;
-            font-size: 15px;
-            padding: 0 0 5px 0;
-            font-family: Poppins, sans-serif;
-            border-bottom: 1px solid #fe4365;
-
-            &::-webkit-search-cancel-button {
-                display: none;
-            }
-        }
-    }
 `;

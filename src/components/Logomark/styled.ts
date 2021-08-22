@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Logomark = styled.div`
     display: flex;
+    color: #962062;
     font-size: 20px;
     cursor: pointer;
     align-items: center;

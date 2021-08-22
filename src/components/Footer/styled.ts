@@ -16,21 +16,22 @@ export const Section1 = styled.section`
     width: 100%;
     height: 80px;
     display: flex;
+    padding: 0 14%;
     max-width: 100vw;
     background: #fff;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-top: solid 1px rgba(0, 0, 0, 0.05);
-
-    `;
+`;
 
 export const Section2 = styled.section`
     width: 100%;
     height: 80px;
     display: flex;
+    padding: 0 14%;
     background: #f67280;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     li {
         list-style: none;
