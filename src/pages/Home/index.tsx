@@ -3,10 +3,9 @@ import Init from '../../components/Init/index';
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
-import { Container, CategoriesBar } from './styled';
 import Cathegories from '../../components/Cathegories/index';
 import Annoucement from '../../components/annoucement/index';
-import TechnologiesCatalog from '../../components/TechnologiesCatalog/index';
+import { TechnologiesCatalog, Catalog } from '../../components/Catalog/index';
 
 interface IProduct {
   id: number,
@@ -21,7 +20,6 @@ interface IProduct {
 const Home: React.FC = () => {
   const [data, setData] = useState<IProduct[]>([]);
   const [cart, setCart] = useState<IProduct[]>([]);
-  const [category, setCategory] = useState('todos')
 
   useEffect(() => {
     api.get('').then(
@@ -46,71 +44,7 @@ const Home: React.FC = () => {
       <Cathegories />
       <TechnologiesCatalog data={data} handleCart={handleCart} />
       <Annoucement />
-
-      <Container>
-        <div className="sectionTitle">
-          <h1>Principais Produtos</h1>
-          <span></span>
-
-          <CategoriesBar>
-            <button 
-              className={category === 'tecnologia' ? 'selected' : ''}
-              onClick={() => setCategory('tecnologia') }>
-                Tecnologia</button>
-            <button 
-              className={category === 'moda' ? 'selected' : ''}
-              onClick={() => setCategory('moda') }>
-                Moda</button>
-            <button 
-              className={category === 'todos' ? 'selected' : ''}
-              onClick={() => setCategory('todos') }>
-                Todos</button>
-            <button 
-              className={category === 'moveis' ? 'selected' : ''}
-              onClick={() => setCategory('moveis') }>
-                Móveis</button>
-            <button 
-              className={category === 'eletrodomesticos' ? 'selected' : ''}
-              onClick={() => setCategory('eletrodomesticos') }>
-                Eletrodomésticos</button>
-          </CategoriesBar>
-        </div>
-
-        <div className="Technologies">
-          {
-            category === 'todos' 
-            ? 
-              data.map((prod, index) => (
-                <div key={prod.id} className="boxProduct">
-                  <div className="productPicture">
-                    <img src={prod.photo} alt={prod.alternative} />
-                  </div>
-
-                  <div className="informations">
-                    <h4>{prod.name}</h4>
-                    <h6>R${prod.price}</h6>
-                    <button onClick={() => handleCart(index)}>Adicionar ao carrinho</button>
-                  </div>
-                </div>
-              ))
-              : data.map((prod, index) => (
-                  category !== prod.category ||
-                    <div key={prod.id} className="boxProduct">
-                      <div className="productPicture">
-                        <img src={prod.photo} alt={prod.alternative} />
-                      </div>
-                
-                      <div className="informations">
-                        <h4>{prod.name}</h4>
-                        <h6>R${prod.price}</h6>
-                        <button onClick={() => handleCart(index)} >Adicionar ao carrinho</button>
-                      </div>
-                    </div>
-                  )
-                )
-          }
-        </div>
-      </Container>
+      <Catalog data={data} handleCart={handleCart}/>
       <Footer />
     </>
   );
