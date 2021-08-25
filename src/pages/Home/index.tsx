@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/index';
 import { Container, CategoriesBar } from './styled';
 import Cathegories from '../../components/Cathegories/index';
 import Annoucement from '../../components/annoucement/index';
+import TechnologiesCatalog from '../../components/TechnologiesCatalog/index';
 
 interface IProduct {
   id: number,
@@ -43,33 +44,7 @@ const Home: React.FC = () => {
       <Header quantidade={cart.length}/>
       <Init />
       <Cathegories />
-      <Container>
-        <div className="sectionTitle">
-          <h1>Aparelhos Celulares</h1>
-          <span></span>
-        </div>
-        
-        <div className="Technologies">
-          { 
-            data.map((prod, index) => (
-              prod.id > 3 ||
-              <div key={prod.id} className="boxProduct">
-                <div className="productPicture">
-                  <img src={prod.photo} alt={prod.alternative}/>
-                </div>
-
-                <div className="informations">
-                  <h4>{prod.name}</h4>
-                  {/* <span>{prod.description}</span> */}
-                  <h6>R${prod.price}</h6>
-                  <button onClick={() => handleCart(index)}>Adicionar ao carrinho</button>
-                </div>
-              </div> 
-            )) 
-          }
-        </div>
-      </Container>
-
+      <TechnologiesCatalog data={data} handleCart={handleCart} />
       <Annoucement />
 
       <Container>

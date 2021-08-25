@@ -34,13 +34,13 @@ export const InputBox = styled.input`
 export const SearchButton = styled.button`
     width: 30px;
     height: 30px;
+    border: none;
     display: grid;
     cursor: pointer;
     border-radius: 50%;
     background: #fe4365;
     place-items: center;
-    transition: 1s linear;
-    border: none;
+    transition: .5s linear;
 
     i {
         color: #fff;
