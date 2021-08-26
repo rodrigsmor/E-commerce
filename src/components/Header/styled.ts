@@ -23,6 +23,14 @@ export const Header = styled.header`
     }
 `;
 
+export const HeaderFixed = styled.div`
+    height: 100%;
+    display: flex;
+    grid-gap: 20px;
+    width: fit-content;
+    align-items: center;
+`;
+
 export const UserInteractions = styled.div`
     display: flex;
     grid-gap: 30px;
@@ -67,5 +75,27 @@ export const UserInteractions = styled.div`
                 display: none;
             }
         }
+    }
+`;
+
+export const ToggleButton = styled.button`
+    width: 30px;
+    height: 25px;
+    border: none;
+    outline: none;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    background: transparent;
+    justify-content: space-between;
+
+    span {
+        width: 100%;
+        height: 5px;
+        display: block;
+        position: relative;
+        border-radius: 25px;
+        background: #fe4365;
+        transition: .3s linear;
     }
 `;

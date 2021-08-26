@@ -1,18 +1,32 @@
 import * as S from './styled';
 import Logomark from '../Logomark';
 import SearchBar from '../SearchBar';
+import SideBar from '../SideBar';
+import { useState } from 'react';
 
 const Header = (props: any) => {
+
+    const [click, setClick] = useState(false);
+
     return (
         <S.Header>
             <div className="headerContainer">
-                <Logomark />
+                <S.HeaderFixed>
+                    <S.ToggleButton
+                        onClick={() => setClick(true) }>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </S.ToggleButton>
+                    <Logomark />
+                </S.HeaderFixed>
 
                 <S.UserInteractions>
                     <SearchBar />
                     
                     <div className="cartBox">
                         <i className='bx bx-cart'></i>
+                        <i className='bx bx-store'></i>
                         <i className='bx bx-heart'></i>
                         <span className={props.quantidade === 0 ? 'notDisplay' : ''}>
                             <p>
@@ -22,6 +36,8 @@ const Header = (props: any) => {
                         <i className='bx bx-user'></i>
                     </div>
                 </S.UserInteractions>
+
+                <SideBar click={click} setClick={setClick}/>
             </div>
         </S.Header>
     );
