@@ -101,3 +101,50 @@ export const NavSection = styled.nav`
         }
     }
 `;
+
+export const BottomSection = styled.footer`
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding: 0 10%;
+    color: #fe4365;
+    font-weight: bold;
+    position: absolute;
+    align-items: center;
+    background: #ffffff;
+
+    p {
+        cursor: pointer;
+        width: fit-content;
+
+        i {
+            opacity: 1;
+            color: #fe4365;
+            margin: 0 0 0 10px;
+            transition: .5s linear;
+        }
+
+        &::after {
+            content: "";
+            width: 0px;
+            height: 1px;
+            display: block;
+            position: absolute;
+            background: #fe4365;
+            transition: .5s linear;
+        }
+
+        &:hover {
+            &::after {
+                width: 200px;
+            }
+
+            i {
+                opacity: 0;
+                margin: 0 0 0 calc(10px + 30px);
+            }
+        }
+    }
+`;

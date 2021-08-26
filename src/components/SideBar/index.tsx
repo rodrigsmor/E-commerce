@@ -38,6 +38,13 @@ const SideBar: any = (props: any) => {
                         }
                     </ul>
                 </S.NavSection>
+
+                <S.BottomSection>
+                    <p>
+                        Visualizar todas as opções
+                        <i className="fas fa-angle-double-right"></i>
+                    </p>
+                </S.BottomSection>
             </div>
         </S.SideBarContainer>
     );
