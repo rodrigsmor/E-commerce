@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SideBarContainer = styled.div`
+export const SideBarContainer = styled.header`
     top: 0;
     left: -30vw;
     width: 30vw;
@@ -19,6 +19,7 @@ export const SideBarContainer = styled.div`
         height: 100%;
         display: flex;
         color: #ffffff;
+        padding: 0 10px;
         flex-direction: column;
         background: transparent;
     }
@@ -29,10 +30,10 @@ export const TopSection = styled.section`
     width: 100%;
     height: 4rem;
     display: flex;
-    padding: 0 10%;
+    padding: 0 5%;
     align-items: center;
     background: transparent;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
     justify-content: space-between;
 
     i, span {
@@ -71,5 +72,32 @@ export const TopSection = styled.section`
 `;
 
 export const NavSection = styled.nav`
+    color: #fff;
+    padding: 5%;
 
+    ul {
+        li {
+            cursor: pointer;
+            list-style: none;
+            width: fit-content;
+            position: relative;
+            padding: 15px 0 15px 15px;
+
+            &::after {
+                content: "";
+                width: 0px;
+                height: 1px;
+                display: block;
+                background: #fff;
+                position: absolute;
+                transition: .5s linear;
+            }
+
+            &:hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
 `;
