@@ -7,10 +7,11 @@ export const SideBarContainer = styled.div`
     height: 100vh;
     position: fixed;
     background: #fe4365;
-    transition: .5s linear;
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &.active {
         left: 0;
+        box-shadow: -1px 2px 39px 2px rgba(0,0,0,0.30);
     }
 
     .container {
@@ -18,19 +19,25 @@ export const SideBarContainer = styled.div`
         height: 100%;
         display: flex;
         color: #ffffff;
-        padding: 0 10%;
         flex-direction: column;
         background: transparent;
     }
 `;
 
 export const TopSection = styled.section`
+    color: #fff;
     width: 100%;
     height: 4rem;
     display: flex;
-    border-bottom: solid 1px #fff;
+    padding: 0 10%;
     align-items: center;
     background: transparent;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    justify-content: space-between;
+
+    i, span {
+        color: #fff !important;
+    }
 
     button {
         width: 30px;
