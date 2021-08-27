@@ -1,5 +1,32 @@
 import styled from "styled-components";
 
+export const SearchContainer = styled.div`
+    width: fit-content;
+    height: fit-content;
+
+    @media screen and (max-width: 840px) {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        width: 100%;
+        height: 4rem;
+        display: grid;
+        margin-top: 0;
+        background: #fff;
+        position: absolute;
+        place-items: center;
+        transition: .5s all linear;
+        border-radius: 0px 0px 25px 25px;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+
+        &.show {
+            opacity: 1;
+            margin-top: 4rem;
+        }
+    }
+`;
+
 export const SearchBox = styled.div`
     display: flex;
     grid-gap: 5px;
@@ -11,6 +38,11 @@ export const SearchBox = styled.div`
     background:  #fcd4d9;
     padding: 2px 5px 2px 20px;
     border: 1px solid #962062;
+    justify-content: space-between;
+
+    @media screen and (max-width: 840px) {
+        width: 80%;
+    }
 `;
 
 export const InputBox = styled.input`
@@ -28,7 +60,11 @@ export const InputBox = styled.input`
 
     &::-webkit-search-cancel-button {
         display: none;
-    }    
+    }
+
+    @media screen and (max-width: 840px) {
+        width: 80%;
+    }
 `;
 
 export const SearchButton = styled.button`

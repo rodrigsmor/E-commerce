@@ -7,6 +7,7 @@ import { useState } from 'react';
 const Header = (props: any) => {
 
     const [click, setClick] = useState(false);
+    const [showSearchbar, setShowSearchbar] = useState(false);
 
     return (
         <S.Header>
@@ -22,9 +23,11 @@ const Header = (props: any) => {
                 </S.HeaderFixed>
 
                 <S.UserInteractions>
-                    <SearchBar />
+                    <SearchBar showSearchbar={showSearchbar} />
                     
                     <div className="cartBox">
+                        <i className={showSearchbar === false ? 'bx bx-search' : 'bx bx-x'} 
+                            onClick={() => showSearchbar === false ? setShowSearchbar(true) : setShowSearchbar(false)}></i>
                         <i className='bx bx-cart'></i>
                         <i className='bx bx-store'></i>
                         <i className='bx bx-heart'></i>

@@ -12,6 +12,7 @@ export const Header = styled.header`
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
     .headerContainer {
+        z-index:
         width: 100%;
         height: 100%;
         padding: 0 8%;
@@ -49,6 +50,10 @@ export const UserInteractions = styled.div`
         height: fit-content;
         align-items: center;
 
+        .bx-search {
+            display: none;
+        }
+
         span {
             color: #fff;
             width: 15px;
@@ -73,6 +78,15 @@ export const UserInteractions = styled.div`
         
             &.notDisplay {
                 display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 840px) {
+
+        .cartBox {
+            .bx-search {
+                display: block;
             }
         }
     }
