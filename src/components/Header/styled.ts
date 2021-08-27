@@ -21,6 +21,10 @@ export const Header = styled.header`
         font-size: 15px;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 500px) {
+            padding: 0 4%;
+        }
     }
 `;
 
@@ -30,6 +34,26 @@ export const HeaderFixed = styled.div`
     grid-gap: 20px;
     width: fit-content;
     align-items: center;
+
+    @media screen and (max-width: 500px) {
+        grid-gap: 10px;
+    }
+
+    @media screen and (max-width: 375px) {
+        div {
+            font-size: 18px;
+
+            h1 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 315px) {
+        div {
+            display: none;
+        }
+    }
 `;
 
 export const UserInteractions = styled.div`
@@ -83,10 +107,23 @@ export const UserInteractions = styled.div`
     }
 
     @media screen and (max-width: 840px) {
-
         .cartBox {
             .bx-search {
                 display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .cartBox {
+            grid-gap: 13px;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .cartBox {
+            .bx-store {
+                display: none;
             }
         }
     }
