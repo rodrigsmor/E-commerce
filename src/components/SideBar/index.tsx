@@ -12,7 +12,7 @@ const SideBar: any = (props: any) => {
         { id: 6, category: "Livros e filmes"},
         { id: 7, category: "Marcas próprias"},
         { id: 8, category: "Eletrodomésticos"},
-        { id: 9, category: "CDS, DVDS e videogames"},
+        { id: 9, category: "CDS, DVDS e videogames"}
     ];
 
     return (

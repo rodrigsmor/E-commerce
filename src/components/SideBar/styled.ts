@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const SideBarContainer = styled.header`
     top: 0;
-    left: -30vw;
-    width: 30vw;
+    left: -35vw;
+    width: 35vw;
     height: 100vh;
     position: fixed;
     background: #fe4365;
@@ -22,6 +22,32 @@ export const SideBarContainer = styled.header`
         padding: 0 10px;
         flex-direction: column;
         background: transparent;
+    }
+
+    @media screen and (max-width: 820px) {
+        left: -40vw;
+        width: 40vw;
+    }
+
+    @media screen and (max-width: 716px) {
+        left: -50vw;
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 580px) {
+        left: -70vw;
+        width: 70vw;
+    }
+
+    @media screen and (max-width: 417px) {
+        left: -80vw;
+        width: 80vw;
+    }
+
+    @media screen and (max-width: 365px) {
+        left: -90vw;
+        width: 90vw;
+        font-size: 14px;
     }
 `;
 
